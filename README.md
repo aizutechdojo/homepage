@@ -31,6 +31,10 @@ https://goo.gl/maps/bqmaKrd5zHnr6S9C6
 
 Discord
 
-<img src="./image/TechDiscord.png" style="zoom:33%;" />
+<img src="./image/TechDiscord.png" style="zoom:22%;" />
 
 https://discord.gg/ccZfsR7fZ4
+
+Line bot
+
+<img src="./image/linebot.png" style="zoom:33%;" />
