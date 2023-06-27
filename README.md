@@ -21,3 +21,7 @@ make server
 
 [Hugo PaperMod](https://github.com/adityatelange/hugo-PaperMod) を使用しています。
 サイトのカスタマイズや設定については [PaperMod の wiki](https://github.com/adityatelange/hugo-PaperMod/wiki) を参照してください。
+
+## デプロイ
+
+main ブランチの最新のコミットが自動的に GitHub Pages としてデプロイされます。
