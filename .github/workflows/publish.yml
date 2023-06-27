@@ -1,0 +1,33 @@
+name: ビルドして GitHub Pages で公開する
+
+on:
+  push:
+    branches:
+      - main
+
+  # ワークフローを手動でもトリガーできるようにする
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    with:
+      upload-artifact: true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # actions/deploy-pages@v2 が必要とする権限
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: アップロードした成果物をデプロイして公開
+        id: deployment
+        uses: actions/deploy-pages@v2

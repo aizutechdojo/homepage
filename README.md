@@ -1,40 +1,23 @@
-# 東北TECH道場 会津道場
+# homepage
 
-東北Tech道場は、アプリ作成に興味がある人が集まる道場です。
-一緒にアプリを作って勉強しながら、教えあうなどモチベーションを高めることができる場です。月一回ほど集まり、自分の興味のある分野でアプリやサービスをもくもく会形式で作成する会です。現役エンジニアも参加しているので、ぜひいろいろきいてみてください。
+東北 TECH 道場　会津道場のホームページのソースコードです。
 
-## 日程
+## 必要なもの
 
-毎月第4週の土曜日を予定しています
+- Go
+- GNU Make
+- [Hugo](https://gohugo.io/)
 
-- 6月 24日 (土曜日)⋅13:00～17:00
-- 7月 22日 (土曜日)⋅13:00～17:00
-- 8月 26日 (土曜日)⋅13:00～17:00
-- 9月 23日 (土曜日)⋅13:00～17:00
-- 10月 28日 (土曜日)⋅13:00～17:00
-- 11月 25日 (土曜日)⋅13:00～17:00 
-- 12月 23日 (土曜日)⋅13:00～17:00
+## 開発用サーバーの起動
 
-## 会場
+以下のコマンドを実行してから http://localhost:1313 にアクセスすると、
+サイトのプレビューが表示されます。
 
-AiCTオフィス
+```
+make server
+```
 
-https://goo.gl/maps/bqmaKrd5zHnr6S9C6
+## カスタマイズ
 
-## 参加条件(当日参加もOK!)
-
-参加費 : 無料
-対象 : 年齢・性別不問・学生・社会人どなたでも大歓迎！
-持ち物 : 開発で使用するノートパソコン
-
-## 連絡について
-
-Discord
-
-<img src="./image/TechDiscord.png" style="zoom:22%;" />
-
-https://discord.gg/ccZfsR7fZ4
-
-Line bot
-
-<img src="./image/linebot.png" style="zoom:33%;" />
+[Hugo PaperMod](https://github.com/adityatelange/hugo-PaperMod) を使用しています。
+サイトのカスタマイズや設定については [PaperMod の wiki](https://github.com/adityatelange/hugo-PaperMod/wiki) を参照してください。

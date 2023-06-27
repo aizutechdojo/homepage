@@ -1,0 +1,15 @@
+name: 正しくビルドできるかどうか確認する
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+  # ワークフローを手動でもトリガーできるようにする
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    with:
+      upload-artifact: false
