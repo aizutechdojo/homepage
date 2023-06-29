@@ -24,4 +24,4 @@ make server
 
 ## デプロイ
 
-main ブランチの最新のコミットが自動的に GitHub Pages としてデプロイされます。
+`main` ブランチの最新のコミットが自動的に GitHub Pages としてデプロイされます。
