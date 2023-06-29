@@ -1,0 +1,32 @@
+baseURL: http://localhost
+
+title: "東北TECH道場　会津道場"
+languageCode: ja-jp
+theme:
+  - "github.com/adityatelange/hugo-PaperMod"
+
+params:
+  profileMode:
+    enabled: true
+    title: "東北 TECH 道場"
+    subtitle: "〜会津道場〜"
+    # TODO: 画像を用意する
+    # imageUrl:
+    # imageTitle:
+    # imageWidth:
+    # imageHeight:
+    buttons:
+      - name: はじめて
+        url: "/about"
+      - name: さんか
+        url: "/join"
+
+  socialIcons:
+    - name: github
+      url: https://github.com/aizutechdojo
+    - name: discord
+      url: https://discord.gg/ccZfsR7fZ4
+    - name: line
+      url: https://line.me/R/ti/p/%40645yxnyk
+
+  ShowCodeCopyButtons: true

@@ -1,0 +1,42 @@
+name: ビルドする
+
+on:
+  workflow_call:
+    inputs:
+      upload-artifact:
+        description: true の場合のみ、ビルド成果物を artifacts としてアップロードします。
+        required: true
+        type: boolean
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hugo のインストール
+        run: sudo snap install hugo
+
+      - name: Dart Sass のインストール
+        run: sudo snap install dart-sass
+
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # GitHub Pages の URL を取得するために actions/configure-pages を使用する
+      # このアクションを実行すると、steps.pages.outputs.base_url で GitHub Pages の URL が取得できるようになる
+      - name: GitHub Pages の URL の取得
+        id: pages
+        uses: actions/configure-pages@v3
+
+      - name: ビルド
+        env:
+          HUGO_ENV: production
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: ビルド成果物を artifacts としてアップロード
+        if: ${{ github.event.inputs.upload-artifact == true }}
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public

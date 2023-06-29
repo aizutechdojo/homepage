@@ -1,0 +1,6 @@
+// VSCode Dev Containers を使用して開発する場合の設定
+{
+	"name": "Hugo",
+	"image": "mcr.microsoft.com/devcontainers/go",
+	"postCreateCommand": "sudo apt-get update -y && sudo apt-get install -y --no-install-recommends hugo bash-completion"
+}
