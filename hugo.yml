@@ -17,9 +17,9 @@ params:
     # imageHeight:
     buttons:
       - name: はじめて
-        url: "/about"
+        url: "about"
       - name: さんか
-        url: "/join"
+        url: "join"
 
   socialIcons:
     - name: github
