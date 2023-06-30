@@ -17,7 +17,9 @@ https://discord.gg/ccZfsR7fZ4
 
 ## LINE
 
-東北 TECH 道場　会津道場の LINE です。
+東北 TECH 道場　会津道場の LINE アカウント (bot) です。
+
+友だち追加して頂くと、開催情報等のお知らせをお届けします（返信による連絡も可能です）。
 
 https://line.me/R/ti/p/%40645yxnyk
 
