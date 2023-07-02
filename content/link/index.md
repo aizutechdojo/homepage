@@ -2,7 +2,7 @@
 title: "りんく"
 menu:
   main:
-    weight: 4
+    weight: 5
 ---
 
 ## 東北 TECH 道場
