@@ -2,6 +2,7 @@ baseURL: https://aizutechdojo.github.io/homepage/
 
 title: "東北TECH道場　会津道場"
 languageCode: ja-jp
+hasCJKLanguage: true
 theme:
   - "github.com/adityatelange/hugo-PaperMod"
 
@@ -15,9 +16,9 @@ menu:
       name: さんか
       url: /join/
       weight: 2
-    - identifier: article
+    - identifier: posts
       name: ほうこく
-      url: /article/toc/
+      url: /posts/
       weight: 3
     - identifier: contact
       name: こんたくと
