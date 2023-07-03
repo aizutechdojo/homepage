@@ -1,8 +1,5 @@
 ---
 title: "こんたくと"
-menu:
-  main:
-    weight: 4
 ---
 
 ## Discord

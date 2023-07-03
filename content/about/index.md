@@ -1,8 +1,5 @@
 ---
 title: "はじめて"
-menu:
-  main:
-    weight: 1
 ---
 
 ## 東北 TECH 道場とは？
