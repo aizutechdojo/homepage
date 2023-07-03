@@ -1,8 +1,5 @@
 ---
 title: "かつどうほうこく"
-menu:
-  main:
-    weight: 3
 ---
 
 ## 2023年

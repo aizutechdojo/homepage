@@ -1,8 +1,5 @@
 ---
 title: "さんか"
-menu:
-  main:
-    weight: 2
 ---
 
 ## 日時

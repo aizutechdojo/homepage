@@ -5,6 +5,29 @@ languageCode: ja-jp
 theme:
   - "github.com/adityatelange/hugo-PaperMod"
 
+menu:
+  main:
+    - identifier: about
+      name: はじめて
+      url: /about/
+      weight: 1
+    - identifier: join
+      name: さんか
+      url: /join/
+      weight: 2
+    - identifier: article
+      name: ほうこく
+      url: /article/toc/
+      weight: 3
+    - identifier: contact
+      name: こんたくと
+      url: /contact/
+      weight: 4
+    - identifier: link
+      name: りんく
+      url: /link/
+      weight: 5
+
 params:
   profileMode:
     enabled: true
